@@ -1,7 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locafit</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
 <%- include('header'); -%>
 
     <main>
-        <h1> Bienvenue sur ma page web </h1>
+        <section class="about-us">
+            <div class="about-text">
+                <h2>À propos de nous :</h2>
+                <p>Bienvenue chez Locafit, votre solution de location d'équipements de fitness haut de gamme. 
+                   Découvrez notre sélection de matériel de sport de qualité, adaptée à vos besoins, 
+                   que ce soit pour la maison, un événement ou une salle de sport. Simplifiez votre entraînement 
+                   avec style et performance.</p>
+                <a href="#" class="btn">En savoir plus</a>
+            </div>
+            <div class="about-image">
+                <img src="benchpress.png" alt="Homme utilisant un banc de musculation">
+            </div>
+        </section>
+    
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item">
+                    <img src="bike1.png" alt="Vélo de sport">
+                </div>
+                <div class="carousel-item">
+                    <img src="bike2.png" alt="Appareil de musculation">
+                </div>
+                <div class="carousel-item">
+                    <img src="bike3.png" alt="Équipement de musculation">
+                </div>
+            </div>
+        </section>
+    
+        <section class="dumbbells">
+            <h2>Découvrez nos nouveaux haltères réglables</h2>
+            <p>Disponible dès maintenant à la location</p>
+            <a href="#" class="btn">En savoir plus</a>
+            <img src="dumbbells.png" alt="Haltères réglables">
+        </section>
 
         <img src="./public/img/Logo.png" id="Logo">
 
@@ -11,3 +54,6 @@
     </main>
 
 <%- include('footer'); -%>
+
+</body>
+</html>
