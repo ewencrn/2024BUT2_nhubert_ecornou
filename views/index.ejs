@@ -2,6 +2,12 @@
 
     <main>
         <h1> Bienvenue sur ma page web </h1>
+
+        <img src="./public/img/Logo.png" id="Logo">
+
+        <% user.forEach(function(element){ %>
+            <%= element.login %>
+        <% }); %>
     </main>
 
 <%- include('footer'); -%>
