@@ -27,5 +27,4 @@ async function checkLogin (login) {
 }
 
 
-
-module.exports = {getUserById};
+module.exports = {getUserById, checkLogin};

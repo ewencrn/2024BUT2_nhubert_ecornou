@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: false}));
 app.use(session({
     secret: 'pamplemousse',
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
 }));
 
 app.get('/connexion', function(req,res){
@@ -26,7 +26,7 @@ app.post('/connexion', async function(req,res){
 
     mdp = md5(mdp);
 
-    const user = await userModel.chekLogin(login);
+    const user = await userModel.checkLogin(login);
 
     if (user != false && user.password == mdp){
         req.session.userId = user.id;
