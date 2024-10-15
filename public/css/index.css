@@ -19,42 +19,7 @@ body {
     color: #333;
 }
 
-header {
-    background-color: #4c4f64;
-    padding: 10px 0;
-}
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo img {
-    height: 60px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-}
-
-.nav-links li {
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.nav-icons img {
-    height: 30px;
-    margin-left: 15px;
-}
 
 /* Section A propos */
 .about-us {
@@ -130,36 +95,3 @@ nav {
     height: 150px;
 }
 
-/* Footer */
-footer {
-    background-color: #4c4f64;
-    color: white;
-    padding: 40px;
-}
-
-.footer-columns {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footer-col h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin-bottom: 8px;
-}
-
-.footer-col ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-col ul li a:hover {
-    text-decoration: underline;
-}
