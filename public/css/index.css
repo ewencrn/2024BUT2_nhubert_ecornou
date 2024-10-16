@@ -1,17 +1,14 @@
-#Logo{
-    width: 500px;
-    height: 500px;
-}
+
 
 #index.ejs{
-    background-color: aqua;
+    background-color: #8A8FA3;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Montserrat;
 }
 
 body {
@@ -27,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #f5f5f5;
+    background-color: #d8d8d8;
 }
 
 .about-text h2 {
