@@ -1,5 +1,12 @@
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+
 header {
-    background-color: #4c4f64;
+    background-color: #8A8FA3;
     padding: 10px 0;
 }
 
@@ -20,7 +27,11 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    font: #8c0a0a;
+    align-items: center;
+    font: #ffffff;
+    font-family: "Montserrat", sans-serif;
+    background-color: #8A8FA3;
+
 }
 
 .nav-links li {
@@ -28,9 +39,13 @@ nav {
 }
 
 .nav-links a {
-    color: #d80000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 18px;
+    font-family: Montserrat;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
 }
 
 .nav-icons img {
