@@ -1,0 +1,165 @@
+#Logo{
+    width: 500px;
+    height: 500px;
+}
+
+#index.ejs{
+    background-color: aqua;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+header {
+    background-color: #4c4f64;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-icons img {
+    height: 30px;
+    margin-left: 15px;
+}
+
+/* Section A propos */
+.about-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 300px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #4c4f64;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #3a3d52;
+}
+
+/* Carousel */
+.carousel {
+    background-color: #d8d8d8;
+    padding: 30px 0;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-item img {
+    height: 150px;
+}
+
+/* Section haltères */
+.dumbbells {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f0f0f0;
+}
+
+.dumbbells h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dumbbells p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.dumbbells img {
+    height: 150px;
+}
+
+/* Footer */
+footer {
+    background-color: #4c4f64;
+    color: white;
+    padding: 40px;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-col h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
