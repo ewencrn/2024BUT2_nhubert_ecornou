@@ -12,12 +12,15 @@ nav {
 }
 
 .logo img {
-    height: 60px;
+    height: 250px;
+    display: flex;
+    margin-left: 450px;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
+    font: #8c0a0a;
 }
 
 .nav-links li {
@@ -25,7 +28,7 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #d80000;
     text-decoration: none;
     font-size: 18px;
 }
