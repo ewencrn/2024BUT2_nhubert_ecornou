@@ -21,21 +21,51 @@ nav {
 .logo img {
     height: 250px;
     display: flex;
+    align-items: center;
+    align-items: 450px;
     margin-left: 450px;
 }
+
+
 
 .nav-links {
     list-style: none;
     display: flex;
     align-items: center;
-    font: #ffffff;
     font-family: "Montserrat", sans-serif;
     background-color: #8A8FA3;
+}
 
+.nav-links li a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li a:hover {
+    color: #ffffff;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin: 50px;
 }
 
 .nav-links a {
@@ -49,6 +79,7 @@ nav {
 }
 
 .nav-icons img {
-    height: 30px;
+    height: 42px;
+    width: 42px;
     margin-left: 15px;
 }
