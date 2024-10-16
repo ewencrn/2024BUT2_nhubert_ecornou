@@ -67,4 +67,8 @@ app.get('/materiel', function(req,res){
     res.render("materiel", {error :null});
 })
 
+app.get('/produit', (req, res) => {
+    res.render('produit');
+});
+
 
