@@ -41,7 +41,9 @@ app.post('/connexion', async function(req,res){
 
 app.get('/', async function(req, res) {
 
-    if (req.session.userId == false)
+    if (req.session.userId == false){
+        
+    }
 
     try {
         const user = await userModel.getUserById(2);
