@@ -7,7 +7,6 @@
 
 header {
     background-color: #8A8FA3;
-    padding: 10px 0;
 }
 
 nav {
@@ -16,11 +15,11 @@ nav {
     align-items: center;
 }
 
-.logo img {
+.logo img{
     height: 250px;
     display: flex;
     align-items: center;
-    margin-left: 550px;
+    margin-left: 600px;
 }
 
 
@@ -32,6 +31,7 @@ nav {
     font-family: "Montserrat", sans-serif;
     background-color: #8A8FA3;
     justify-content: center;
+    margin-top: 0px;
 }
 
 .nav-links li a {
@@ -79,5 +79,6 @@ nav {
 .nav-icons img {
     height: 42px;
     width: 42px;
-    margin-left: 15px;
+    margin-right: 15px;
+
 }
