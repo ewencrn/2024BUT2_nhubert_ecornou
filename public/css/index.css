@@ -9,10 +9,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
+    background-color: #8A8FA3;
 }
 
 body {
-    background-color: #e0e0e0;
+    background-color: #8A8FA3;
     color: #333;
 }
 
@@ -24,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    background-color: #d8d8d8;
+    background-color: #8A8FA3;
 }
 
 .about-text h2 {
@@ -66,7 +67,7 @@ body {
 
 /* Carousel */
 .carousel {
-    background-color: #d8d8d8;
+    background-color: #8A8FA3;
     padding: 30px 0;
 }
 
@@ -84,7 +85,8 @@ body {
 .dumbbells {
     text-align: center;
     padding: 50px 0;
-    background-color: #f0f0f0;
+    background-color: #8A8FA3;
+
 }
 
 .dumbbells h2 {
