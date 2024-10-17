@@ -86,7 +86,6 @@ body {
     text-align: center;
     padding: 50px 0;
     background-color: #8A8FA3;
-
 }
 
 .dumbbells h2 {
@@ -100,6 +99,14 @@ body {
 }
 
 .dumbbells img {
-    height: 150px;
+    height: 250px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#imgbutt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
