@@ -16,10 +16,11 @@ nav {
 }
 
 .logo img{
-    height: 250px;
+    height: 150px;
+    width: 350px;
     display: flex;
     align-items: center;
-    margin-left: 600px;
+    margin-left: 540px;
 }
 
 
