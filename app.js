@@ -68,7 +68,7 @@ app.get('/materiel', function(req,res){
 })
 
 app.get('/produit', (req, res) => {
-    res.render('produit');
+    res.render('produit', {error :null});
 });
 
 
