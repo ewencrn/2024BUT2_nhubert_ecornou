@@ -1,7 +1,7 @@
 /* Footer */
 footer {
-    background-color: #8A8FA3;
-    color: white;
+    background-color: #ECECEC;
+    color: rgb(0, 0, 0);
     padding: 40px;
 }
 
@@ -24,7 +24,7 @@ footer {
 }
 
 .footer-col ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
