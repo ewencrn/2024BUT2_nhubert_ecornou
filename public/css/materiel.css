@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Montserrat;
+
 }
 
 body {
@@ -58,4 +59,9 @@ body {
 .grid-item img {
     max-width: 100%;
     height: auto;
+}
+
+#velimg{
+    width: 250px;
+    height: 250px;
 }
