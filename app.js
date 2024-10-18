@@ -48,12 +48,24 @@ app.get('/', async function(req, res) {
     try {
         const user = await userModel.getUserById(2);
         res.render('index', {user});
-        console.log(user);
     } catch (err) {
         console.log(err);
         res.status(500).send('Erreur lors de la récupération des données');
     }
 }); 
+
+
+
+
+
+app.get('/materiel', function(req, res){
+    res.render("materiel");
+})
+
+app.get('/product', (req, res) => {
+    res.render('product');
+});
+
 
 app.use(function (req, res) { 
     res.status(404).render("404");
@@ -62,15 +74,6 @@ app.use(function (req, res) {
 app.listen(3000, function () {
     console.log('Server running on port 3000');
 });
-
-app.get('/materiel', function(req,res){
-    res.render("materiel", {error :null});
-})
-
-app.get('/produit', (req, res) => {
-    res.render('produit', {error :null});
-});
-
 
 
 
