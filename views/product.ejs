@@ -7,30 +7,23 @@
     <link rel="stylesheet" href="/css/product.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="/">Équipement</a></li>
-                <li><a href="/materiel">Matériel</a></li>
-                <li><a href="#">Promotions</a></li>
-                <li><a href="#">Structures</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+    <%- include('header'); -%>
 
     <main>
         <section class="product-detail">
+
+            <div class="product-image">
+                <img src="/img/velo-d-appartement-compact-technogym-cycle-removebg-preview.png" alt="Vélo d'appartement">
+            </div>
+
             <div class="product-header">
                 <h1>Vélo d'appartement</h1>
                 <p>5 Disponibles</p>
                 <p class="price">15 € <span>/ jour</span></p>
                 <button class="btn">Ajouter au panier</button>
             </div>
-            
-            <div class="product-image">
-                <img src="/img/bike_detail.png" alt="Vélo d'appartement">
-            </div>
-            
+             
             <div class="product-description">
                 <p>
                     Le vélo d'appartement est un équipement de fitness compact et ergonomique, idéal pour les séances de cardio à domicile.
@@ -53,30 +46,7 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-columns">
-            <div class="footer-col">
-                <h3>Locafit</h3>
-                <ul>
-                    <li><a href="#">Qui sommes-nous ?</a></li>
-                    <li><a href="#">Recrutement</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Service client</h3>
-                <ul>
-                    <li><a href="#">Conditions de location</a></li>
-                    <li><a href="#">Résilier un abonnement</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h3>Nos services</h3>
-                <ul>
-                    <li><a href="#">Louer votre matériel</a></li>
-                    <li><a href="#">Personnaliser vos produits</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <%- include('footer'); -%>
+
 </body>
 </html>

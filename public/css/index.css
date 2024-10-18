@@ -19,7 +19,7 @@ body {
 
 
 
-/* Section A propos */
+
 .about-us {
     display: flex;
     justify-content: space-between;
@@ -43,7 +43,7 @@ body {
     width: 300px;
 }
 
-/*boutton*/
+
 .btn {
     padding: 10px 20px;
     background-color: #8A8FA3;
@@ -65,61 +65,70 @@ body {
 }
 
 
-/* Carousel */
-/* Global carousel styling */
 .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: 100%;
-    height: 400px;
+    max-width: 800px;
+    margin: auto;
     overflow: hidden;
 }
 
 .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
-    width: 300px;
-    margin: 0 15px;
-    transition: transform 0.5s ease, filter 0.5s ease;
+.carousel-slide {
+    display: none;
+    text-align: center;
 }
 
-.carousel-item img {
+.carousel-slide img {
     width: 100%;
     height: auto;
-    display: block;
+    border-radius: 10px;
 }
 
-/* Central image (active) */
-.carousel-item.active {
-    transform: scale(1.2);
-    filter: blur(0px);
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
 }
 
-/* Side images (not active) */
-.carousel-item:not(.active) {
-    filter: blur(5px);
-    transform: scale(0.8);
+.prev {
+    left: 0;
 }
 
-/* Optional styling for responsiveness */
-@media (max-width: 768px) {
-    .carousel-item {
-        width: 200px;
-    }
-    .carousel-item.active {
-        transform: scale(1.1);
-    }
+.next {
+    right: 0;
 }
 
-/* Section haltères */
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
 .dumbbells {
     text-align: center;
     padding: 50px 0;

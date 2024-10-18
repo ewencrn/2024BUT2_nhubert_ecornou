@@ -1,44 +1,9 @@
-/* Styles pour la page produit */
 .product-detail {
     padding: 50px;
     background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.product-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.product-header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.product-header .price {
-    font-size: 24px;
-    margin: 10px 0;
-}
-
-.product-header .price span {
-    font-size: 18px;
-    color: #666;
-}
-
-.product-header .btn {
-    padding: 10px 20px;
-    background-color: #4c4f64;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.product-header .btn:hover {
-    background-color: #3a3d52;
 }
 
 .product-image img {
@@ -79,33 +44,3 @@
     font-size: 18px;
 }
 
-/* Footer Styles */
-.footer-columns {
-    display: flex;
-    justify-content: space-around;
-    background-color: #4c4f64;
-    color: white;
-    padding: 40px;
-}
-
-.footer-col h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.footer-col ul {
-    list-style: none;
-}
-
-.footer-col ul li {
-    margin-bottom: 8px;
-}
-
-.footer-col ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer-col ul li a:hover {
-    text-decoration: underline;
-}
