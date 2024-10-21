@@ -11,7 +11,7 @@ body {
     color: #333;
 }
 
-.search-material {
+.search-structure {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,10 +20,10 @@ body {
 }
 
 
-.search-material input {
+.search-structure input {
     width: 300px;
     padding: 10px 20px;
-    border: 2px solid #ddd; /* Couleur de base avant interaction */
+    border: 2px solid #ddd; 
     border-radius: 30px;
     font-size: 16px;
     outline: none;
@@ -33,30 +33,30 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.search-material input:focus {
-    border-color: #8A8FA3; /* Couleur de bordure quand on tape dans la barre */
-    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Couleur d'ombre en fonction de #8A8FA3 */
+.search-structure input:focus {
+    border-color: #8A8FA3; 
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); 
     background-color: #fff;
 }
 
-.search-material input:not(:placeholder-shown) {
-    border-color: #8A8FA3; /* Couleur activée quand du texte est saisi */
-    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Effet lumineux */
+.search-structure input:not(:placeholder-shown) {
+    border-color: #8A8FA3; 
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); 
 }
 
 /***************************/
 
 
 
-.search-material button {
-    background-color: #374254; /* Couleur de fond sombre et moderne */
-    border: 2px solid #8a8fa3; /* Bordure néon */
-    border-radius: 50px; /* Forme arrondie */
+.search-structure button {
+    background-color: #374254; 
+    border: 2px solid #8a8fa3; 
+    border-radius: 50px; 
     cursor: pointer;
-    padding: 8px 18px; /* Taille légèrement réduite */
+    padding: 8px 18px; 
     margin-left: 10px;
-    color: #ececec; /* Couleur du texte */
-    font-size: 14px; /* Taille du texte légèrement réduite */
+    color: #ececec; 
+    font-size: 14px; 
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -65,29 +65,29 @@ body {
     overflow: hidden;
 }
 
-.search-material button::before {
+.search-structure button::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     width: 300%;
     height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(173, 187, 198, 0.6), transparent); /* Utilisation du #adbbc6 pour l'effet lumineux */
+    background: linear-gradient(120deg, transparent, rgba(173, 187, 198, 0.6), transparent); 
     transition: all 0.6s ease;
 }
 
-.search-material button:hover::before {
+.search-structure button:hover::before {
     left: 100%;
 }
 
-.search-material button:hover {
-    background-color: #8a8fa3; /* Changement de couleur au hover */
-    color: #374254; /* Texte change pour un contraste plus fort */
-    box-shadow: 0 0 15px rgba(138, 143, 163, 0.8); /* Effet lumineux en fonction du #8a8fa3 */
+.search-structure button:hover {
+    background-color: #8a8fa3; 
+    color: #374254; 
+    box-shadow: 0 0 15px rgba(138, 143, 163, 0.8); 
 }
 
-.search-material button:active {
-    transform: scale(0.95); /* Légère réduction au clic pour l'effet interactif */
+.search-structure button:active {
+    transform: scale(0.95);
 }
 
 
@@ -102,11 +102,11 @@ body {
     margin-left: 10px;
 }*/
 
-.search-material img {
+.search-structure img {
     height: 25px;
 }
 
-.material-grid {
+.structure-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
