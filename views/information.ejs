@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,31 +8,55 @@
     <link rel="stylesheet" href="/css/information.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-    <title>Document</title>
+    <title>LocFit - A propos de nous</title>
 </head>
+
 <body id="bodyinfo">
     <%- include('header'); -%>
 
-    <h1 id="titreinfo">
-A propos de nous
-    </h1>
+        <main>
 
-    <p id="texteinfo">
-        Bienvenue chez Locfit, là où le style rencontre la performance. Nous croyons que le sport n'est pas seulement une question de performance, mais aussi d'attitude et de style. C'est pourquoi nous proposons une sélection unique de matériel de sport qui allie fonctionnalité, élégance et confort, pour ceux qui recherchent un look chic et décontracté, même pendant l'effort.
-    </p>
+            <h1 id="titreinfo">
+                A propos de nous
+            </h1>
 
-    <p id="texteinfo">
-        Notre gamme est conçue pour s'adapter à votre style de vie actif, que vous soyez un athlète passionné ou simplement à la recherche de l'équipement parfait pour rester en forme avec élégance. Chaque produit que nous proposons est soigneusement sélectionné pour répondre aux plus hauts standards de qualité, tout en incarnant un design moderne et raffiné.
-    </p>
+            <section class="a-propos">
+                
+                <div class="description">
+                    <p>
+                        Bienvenue chez Locfit, là où le style rencontre la performance. Nous croyons que le sport n'est
+                        pas seulement une question de performance, mais aussi d'attitude et de style. C'est pourquoi
+                        nous proposons une sélection unique de matériel de sport qui allie fonctionnalité, élégance et
+                        confort, pour ceux qui recherchent un look chic et décontracté, même pendant l'effort.
+                    </p>
+
+                    <p>
+                        Notre gamme est conçue pour s'adapter à votre style de vie actif, que vous soyez un athlète
+                        passionné ou simplement à la recherche de l'équipement parfait pour rester en forme avec
+                        élégance. Chaque produit que nous proposons est soigneusement sélectionné pour répondre aux plus
+                        hauts standards de qualité, tout en incarnant un design moderne et raffiné.
+                    </p>
+
+                    <p>
+                        Chez Locfit, nous croyons que vous pouvez avoir le meilleur des deux mondes : l'efficacité d'un
+                        équipement sportif de pointe et l'élégance d'une tenue stylée. Prêt à élever votre pratique
+                        sportive tout en restant chic ? Explorez notre collection et rejoignez la communauté de ceux qui
+                        allient sport et style avec distinction.
+                    </p>
+                </div>
+
+                <div class="img">
+                    <img src="/img/illustration2.webp" alt="Illustration">
+                </div>
+            </section>
+
+        </main>
 
 
-    <p id="texteinfo">
-        Chez Locfit, nous croyons que vous pouvez avoir le meilleur des deux mondes : l'efficacité d'un équipement sportif de pointe et l'élégance d'une tenue stylée. Prêt à élever votre pratique sportive tout en restant chic ? Explorez notre collection et rejoignez la communauté de ceux qui allient sport et style avec distinction.
-    </p>
-
-
-    <%- include('footer'); -%>
+        <%- include('footer'); -%>
 </body>
+
 </html>

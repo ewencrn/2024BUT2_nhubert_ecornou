@@ -70,6 +70,10 @@ app.get('/equipements', (req, res) => {
     res.render('equipements');
 });
 
+app.get('/structures', (req, res) => {
+    res.render('structures');
+});
+
 app.get('/information', (req, res) => {
     res.render('information');
 });
