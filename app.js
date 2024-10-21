@@ -66,6 +66,14 @@ app.get('/product', (req, res) => {
     res.render('product');
 });
 
+app.get('/equipements', (req, res) => {
+    res.render('equipements');
+});
+
+app.get('/structures', (req, res) => {
+    res.render('structures');
+});
+
 
 app.use(function (req, res) { 
     res.status(404).render("404");

@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+}
+
+body {
+    background-color: #d8d8d8;
+    color: #333;
+}
+
+.search-material {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ececec;
+}
+
+
+.search-material input {
+    width: 300px;
+    padding: 10px 20px;
+    border: 2px solid #ddd; /* Couleur de base avant interaction */
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8f8f8;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-material input:focus {
+    border-color: #8A8FA3; /* Couleur de bordure quand on tape dans la barre */
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Couleur d'ombre en fonction de #8A8FA3 */
+    background-color: #fff;
+}
+
+.search-material input:not(:placeholder-shown) {
+    border-color: #8A8FA3; /* Couleur activée quand du texte est saisi */
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Effet lumineux */
+}
+
+/***************************/
+
+
+
+.search-material button {
+    background-color: #374254; /* Couleur de fond sombre et moderne */
+    border: 2px solid #8a8fa3; /* Bordure néon */
+    border-radius: 50px; /* Forme arrondie */
+    cursor: pointer;
+    padding: 8px 18px; /* Taille légèrement réduite */
+    margin-left: 10px;
+    color: #ececec; /* Couleur du texte */
+    font-size: 14px; /* Taille du texte légèrement réduite */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.search-material button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(173, 187, 198, 0.6), transparent); /* Utilisation du #adbbc6 pour l'effet lumineux */
+    transition: all 0.6s ease;
+}
+
+.search-material button:hover::before {
+    left: 100%;
+}
+
+.search-material button:hover {
+    background-color: #8a8fa3; /* Changement de couleur au hover */
+    color: #374254; /* Texte change pour un contraste plus fort */
+    box-shadow: 0 0 15px rgba(138, 143, 163, 0.8); /* Effet lumineux en fonction du #8a8fa3 */
+}
+
+.search-material button:active {
+    transform: scale(0.95); /* Légère réduction au clic pour l'effet interactif */
+}
+
+
+
+
+/**********************/
+
+/*.search-material button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}*/
+
+.search-material img {
+    height: 25px;
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    background-color: #8A8FA3;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+#velimg{
+    width: 250px;
+    height: 250px;
+}
