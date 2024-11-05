@@ -1,0 +1,98 @@
+/* Section carousel de base */
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    height: 300px; /* Hauteur fixe pour éviter le déplacement vertical */
+}
+
+/* Centrer les images et ajuster leur taille */
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Assure que l'image est centrée verticalement */
+}
+
+.carousel-slide img {
+    max-width: 100%; /* Limite la largeur de l'image au conteneur */
+    max-height: 100%; /* Limite la hauteur de l'image au conteneur */
+    transition: transform 0.5s ease;
+    object-fit: contain; /* Garde l'image contenue et centrée sans recadrage */
+}
+
+/* Style futuriste des boutons de navigation */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) perspective(500px) translateZ(0); /* Point de départ avec effet 3D */
+    background: rgba(255, 255, 255, 0.1); /* Fond transparent */
+    color: #00d1ff; /* Bleu futuriste */
+    border: 2px solid #00d1ff;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+    z-index: 10;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.carousel-btn:hover {
+    background: #00d1ff;
+    color: #ffffff;
+    box-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff, 0 0 30px #00d1ff;
+    transform: translateY(-50%) perspective(500px) translateZ(15px) scale(1.1); /* Avance vers l'utilisateur */
+}
+
+/* Rapprocher les boutons des images */
+.prev {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+/* Style futuriste des points du carrousel */
+.carousel-dots {
+    text-align: center;
+    position: absolute;
+    bottom: -10px; /* Abaisse les points sous le carrousel */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 209, 255, 0.4), 0 0 10px rgba(0, 209, 255, 0.2); /* Effet lumineux de base */
+}
+
+.dot:hover,
+.dot.active {
+    background-color: #00d1ff;
+    transform: scale(1.3); /* Agrandit les points au survol */
+    box-shadow: 0 0 10px #00d1ff, 0 0 20px #00d1ff, 0 0 30px #00d1ff; /* Effet lumineux intense */
+}
