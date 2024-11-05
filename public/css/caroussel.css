@@ -26,8 +26,9 @@
 .carousel-slide img {
     max-width: 100%; /* Limite la largeur de l'image au conteneur */
     max-height: 100%; /* Limite la hauteur de l'image au conteneur */
-    transition: transform 0.5s ease;
+    transition: transform 2s ease;
     object-fit: contain; /* Garde l'image contenue et centrée sans recadrage */
+    margin-bottom: 20px;
 }
 
 /* Style futuriste des boutons de navigation */

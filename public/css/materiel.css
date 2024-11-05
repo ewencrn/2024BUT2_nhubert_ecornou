@@ -23,7 +23,7 @@ body {
 .search-material input {
     width: 300px;
     padding: 10px 20px;
-    border: 2px solid #ddd; /* Couleur de base avant interaction */
+    border: 2px solid #ddd; 
     border-radius: 30px;
     font-size: 16px;
     outline: none;
@@ -34,29 +34,29 @@ body {
 }
 
 .search-material input:focus {
-    border-color: #8A8FA3; /* Couleur de bordure quand on tape dans la barre */
-    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Couleur d'ombre en fonction de #8A8FA3 */
+    border-color: #8A8FA3; 
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); 
     background-color: #fff;
 }
 
 .search-material input:not(:placeholder-shown) {
-    border-color: #8A8FA3; /* Couleur activée quand du texte est saisi */
-    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); /* Effet lumineux */
+    border-color: #8A8FA3; 
+    box-shadow: 0 0 8px rgba(138, 143, 163, 0.6); 
 }
 
-/***************************/
+
 
 
 
 .search-material button {
-    background-color: #374254; /* Couleur de fond sombre et moderne */
-    border: 2px solid #8a8fa3; /* Bordure néon */
-    border-radius: 50px; /* Forme arrondie */
+    background-color: #374254; 
+    border: 2px solid #8a8fa3; 
+    border-radius: 50px; 
     cursor: pointer;
-    padding: 8px 18px; /* Taille légèrement réduite */
+    padding: 8px 18px; 
     margin-left: 10px;
-    color: #ececec; /* Couleur du texte */
-    font-size: 14px; /* Taille du texte légèrement réduite */
+    color: #ececec; 
+    font-size: 14px; 
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -72,7 +72,7 @@ body {
     left: -100%;
     width: 300%;
     height: 100%;
-    background: linear-gradient(120deg, transparent, rgba(173, 187, 198, 0.6), transparent); /* Utilisation du #adbbc6 pour l'effet lumineux */
+    background: linear-gradient(120deg, transparent, rgba(173, 187, 198, 0.6), transparent);
     transition: all 0.6s ease;
 }
 
@@ -81,13 +81,13 @@ body {
 }
 
 .search-material button:hover {
-    background-color: #8a8fa3; /* Changement de couleur au hover */
-    color: #374254; /* Texte change pour un contraste plus fort */
-    box-shadow: 0 0 15px rgba(138, 143, 163, 0.8); /* Effet lumineux en fonction du #8a8fa3 */
+    background-color: #8a8fa3; 
+    color: #374254; 
+    box-shadow: 0 0 15px rgba(138, 143, 163, 0.8); 
 }
 
 .search-material button:active {
-    transform: scale(0.95); /* Légère réduction au clic pour l'effet interactif */
+    transform: scale(0.95); 
 }
 
 
@@ -123,16 +123,37 @@ body {
     height: auto;
 }
 
-#velimg{
+#velimg {
     width: 250px;
     height: 250px;
-justify-content: center;
-transition: transform 0.3s ease; /* Ajoute une transition pour lisser l'effet */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    border-radius: 5px; 
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 0.2); 
+    position: relative;
+    overflow: hidden; 
+}
+
+#velimg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+#velimg:hover::before {
+    left: 150%; 
 }
 
 #velimg:hover {
-    transform: scale(1.1); /* Agrandit l'image à 110% */
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.4); 
+    cursor: pointer;
 }
+
 
 #productimg{
     align-items: center;
