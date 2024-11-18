@@ -54,10 +54,6 @@ app.get('/', async function(req, res) {
     }
 }); 
 
-
-
-
-
 app.get('/materiel', function(req, res){
     res.render("materiel");
 })
@@ -77,6 +73,7 @@ app.get('/structures', (req, res) => {
 app.get('/information', (req, res) => {
     res.render('information');
 });
+;
 
 
 app.use(function (req, res) { 
