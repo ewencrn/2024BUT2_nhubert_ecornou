@@ -17,7 +17,7 @@ async function getUserById (id) {
 async function checkLogin (login) {
     sql = "SELECT * FROM utilisateur WHERE login = ?";
     return new Promise((resolve, reject) => {
-        bdd.query(sql, login, (err, results) => {
+        bdd.query(sql, [login], (err, results) => {
             if (err) {
                 return reject(err);
             }
@@ -25,6 +25,7 @@ async function checkLogin (login) {
         });
     });
 }
+
 
 
 module.exports = {getUserById, checkLogin};
