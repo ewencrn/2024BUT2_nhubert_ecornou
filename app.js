@@ -3,6 +3,7 @@ const session = require('express-session');
 const md5 = require('md5');
 const app = express();
 const userModel = require("./models/user.js");
+const bdd = require("./models/database.js");
 
 app.set('view engine', 'ejs');
 
@@ -58,13 +59,44 @@ app.get('/materiel', function(req, res){
     res.render("materiel");
 })
 
-app.get('/product', (req, res) => {
-    res.render('product');
+app.get('/product/:id', (req, res) => {
+    const productId = req.params.id; 
+    const query = 'SELECT * FROM equipement_sport WHERE ID = '+ productId; 
+    bdd.query(query, (err, results) => {
+        if (err) {
+            console.error('Erreur lors de la récupération des données :', err);
+            return res.status(500).send('Erreur serveur');
+        }
+        let produit = results[0];
+        res.render('product', { produit });
+    });
 });
 
+
+
 app.get('/equipements', (req, res) => {
-    res.render('equipements');
+    const query = 'SELECT * FROM equipement_sport';
+    bdd.query(query, (err, results) => {
+        if (err) {
+            return res.status(500).send('Erreur lors de la récupération des données');
+        }
+        res.render('equipements', { materiels: results });
+    });
 });
+
+app.get('/materiel', (req, res) => {
+    const query = 'SELECT * FROM materiel_sport';
+    bdd.query(query, (err, results) => {
+        if (err) {
+            return res.status(500).send('Erreur serveur');
+        }
+        
+        console.log(results)
+        res.render('materiel', { materiels: results });
+    });
+});
+
+
 
 app.get('/structures', (req, res) => {
     res.render('structures');

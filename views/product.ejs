@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produit - Vélo d'appartement</title>
+    <title>Produit - <%= produit.Nom %></title>
     <link rel="stylesheet" href="/css/product.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,26 +13,24 @@
 <body>
     
     <%- include('header'); -%>
-
     <main>
+        <% console.log(produit.image); %>
         <section class="product-detail">
 
             <div class="product-image">
-                <img src="/img/velo-d-appartement-compact-technogym-cycle-removebg-preview.png" alt="Vélo d'appartement">
+                <img src="/img/equipement<%= produit.ID %>.avif" alt="<%= produit.Nom %>">
             </div>
-
+            
+            
             <div class="product-header">
-                <h1 id="titreprdt">Vélo d'appartement</h1>
-                <p id="restant">5 Disponibles</p>
-                <p class="price" id="prixprdt">15 € <span>/ jour</span></p>
+                <h1 id="titreprdt"><%= produit.Nom %></h1>
+                <p id="restant"><%= produit.stock %> Disponibles</p>
+                <p class="price" id="prixprdt"><%= produit.Prix %> € <span>/ jour</span></p>
                 <button class="btnprdt" id="btnprdt">Ajouter au panier</button>
             </div>
-             
+            
             <div class="product-description">
-                <p>
-                    Le vélo d'appartement est un équipement de fitness compact et ergonomique, idéal pour les séances de cardio à domicile.
-                    Doté de plusieurs niveaux de résistance, il permet de simuler différents terrains et d'ajuster l'intensité de l'entraînement selon les objectifs.
-                </p>
+                <p><%= produit.Description %></p>
             </div>
 
             <div class="product-muscles">

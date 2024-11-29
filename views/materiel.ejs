@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LocFit - Matériel</title>
+    <title>LocFit - Equipements</title>
     <link rel="stylesheet" href="/css/materiel.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/index.css">
@@ -21,24 +21,17 @@
     </section>
 
     <section class="material-grid">
-        <a href="/product">
-            <img src="/img/materiel1.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/materiel2.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/materiel3.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/materiel4.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/materiel5.avif" alt="velimg" id="velimg">
-
-
-
-        </a>
+        <% materiels.forEach((materiel) => { %>
+            <a href="/product/<%= materiel.ID %>">
+                <img src="/img/equipement<%= materiel.ID %>.avif" alt="<%= materiel.Nom %>" id="velimg">
+                <div class="material-info">
+                    <h3><%= materiel.Nom %></h3>
+                    <p><%= materiel.Description %></p>
+                    <p>Prix : <%= materiel.Prix %> €</p>
+                    <p><%= materiel.Disponibilité %></p>
+                </div>
+            </a>
+        <% }); %>
     </section>
 
     <%- include('footer'); -%>

@@ -21,25 +21,18 @@
     </section>
 
     <section class="material-grid">
-        <a href="/product">
-            <img src="/img/equipement1.avif" alt="velimg" id="velimg">
+    <% materiels.forEach((materiel) => { %>
+        <a href="/product/<%= materiel.ID %>">
+            <img src="/img/materiel<%= materiel.ID %>.avif" alt="<%= materiel.Nom %>" id="velimg">
+            <div class="material-info">
+                <h3><%= materiel.Nom %></h3>
+                <p><%= materiel.Description %></p>
+                <p>Prix : <%= materiel.Prix %> €</p>
+                <p><%= materiel.Disponibilité %></p>
+            </div>
         </a>
-        <a href="/product">
-            <img src="/img/equipement2.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/equipement3.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/equipement4.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/equipement5.avif" alt="velimg" id="velimg">
-        </a>
-        <a href="/product">
-            <img src="/img/equipement6.avif" alt="velimg" id="velimg">
-        </a>
-    </section>
+    <% }); %>
+</section>
 
     <%- include('footer'); -%>
 
